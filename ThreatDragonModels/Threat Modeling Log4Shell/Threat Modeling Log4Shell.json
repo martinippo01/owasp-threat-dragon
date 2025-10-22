@@ -167,7 +167,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "Attacker",
-              "description": "",
+              "description": "User that performs a request with a malicious content.\nAttacker uses to execute code remotely.",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -401,7 +401,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Webapp\n\n\n\n\n\n\n\n",
-              "description": "",
+              "description": "A java application that uses Log4j for logging.\nIt uses an older verison of log4j that has not been patched for log4shell.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -521,7 +521,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Log4j",
-              "description": "",
+              "description": "Java logging library that does not perform input validation.\nIn case user input gets to the logs, they can perform a code injection.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -644,7 +644,7 @@
             "data": {
               "type": "tm.Store",
               "name": "Application logs",
-              "description": "",
+              "description": "Storage for the logs made by log4j.\nWhere the code gets executed.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
