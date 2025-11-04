@@ -28,8 +28,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "293583f4-e427-468e-a7f0-91f784464c07",
             "zIndex": -1,
+            "id": "293583f4-e427-468e-a7f0-91f784464c07",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -49,8 +49,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "5481f5d2-cfd8-43d5-81ef-9c173e8f9729",
             "zIndex": -1,
+            "id": "5481f5d2-cfd8-43d5-81ef-9c173e8f9729",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -80,6 +80,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 0,
             "ports": {
               "groups": {
                 "top": {
@@ -163,7 +164,6 @@
               ]
             },
             "id": "76a3e43b-6a7a-4639-8215-147dbadfae81",
-            "zIndex": 0,
             "data": {
               "type": "tm.Actor",
               "name": "Attacker",
@@ -197,6 +197,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -280,7 +281,6 @@
               ]
             },
             "id": "7b47575a-25ed-46dc-b0d6-a16cfa955de4",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "User",
@@ -314,6 +314,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -397,7 +398,6 @@
               ]
             },
             "id": "e63a931a-e3dd-4d72-9db8-7d2f65736769",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Webapp\n\n\n\n\n\n\n\n",
@@ -434,6 +434,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -517,7 +518,6 @@
               ]
             },
             "id": "eaa889c8-3e9a-4a2e-89cc-6ccf731f14a0",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Log4j",
@@ -557,6 +557,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -640,7 +641,6 @@
               ]
             },
             "id": "887949af-1559-4e80-a48f-7b9a13780191",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "Application logs",
@@ -678,6 +678,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -761,7 +762,6 @@
               ]
             },
             "id": "e6b0f9e7-1e5d-482f-abff-3d25ec8831fc",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "External server",
@@ -979,6 +979,33 @@
                 "y": 432
               }
             ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "f8b014ab-33c3-437f-9b78-92b29eadc32c",
+            "source": {
+              "x": 750,
+              "y": 30
+            },
+            "target": {
+              "x": 750,
+              "y": 550
+            },
+            "vertices": []
           }
         ]
       }
